@@ -1,4 +1,4 @@
-<suite name="suite" parallel="instances" thread-count="4">
+<suite name="suite" parallel="methods" thread-count="2">
   <test name="otus">
     <classes>
       <class name="ru.grigan.testerFrame.tests.otus.OtusParameterTest" />
