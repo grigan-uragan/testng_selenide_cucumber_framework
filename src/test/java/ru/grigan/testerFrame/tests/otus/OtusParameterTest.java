@@ -3,6 +3,7 @@ package ru.grigan.testerFrame.tests.otus;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import ru.grigan.testerFrame.page.otus.OtusCatalogPage;
+import ru.grigan.testerFrame.steps.MyRetryAnalyzer;
 import ru.grigan.testerFrame.tests.BaseTest;
 
 import static org.testng.Assert.assertTrue;
@@ -19,7 +20,7 @@ public class OtusParameterTest extends BaseTest {
     };
   }
 
-  @Test(dataProvider = "courseName")
+  @Test(dataProvider = "courseName", retryAnalyzer = MyRetryAnalyzer.class)
   public void parametersTest(String course) {
     String headerName = new OtusCatalogPage().open(BASE_URL).searchCourseByName(course).getHeaderName();
     assertTrue(headerName.contains(course));
