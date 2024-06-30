@@ -2,10 +2,11 @@ package ru.grigan.testerFrame.tests.otus;
 
 import org.testng.annotations.Test;
 import ru.grigan.testerFrame.page.otus.OtusCatalogPage;
+import ru.grigan.testerFrame.tests.BaseTest;
 
 import static org.testng.Assert.assertTrue;
 
-public class OtusTest {
+public class OtusTest extends BaseTest {
   private final static String BASE_URL = "https://otus.ru/catalog/courses";
 
   @Test

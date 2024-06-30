@@ -1,0 +1,8 @@
+<suite name="suite" parallel="instances" thread-count="4">
+  <test name="otus">
+    <classes>
+      <class name="ru.grigan.testerFrame.tests.otus.OtusParameterTest" />
+      <class name="ru.grigan.testerFrame.tests.otus.OtusTest" />
+    </classes>
+  </test>
+</suite>
